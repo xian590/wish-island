@@ -6387,7 +6387,11 @@ function showEthicsNotice() {
     </div>
   `;
   document.body.appendChild(modal);
-  requestAnimationFrame(() => { modal.style.opacity = '1'; document.getElementById('ethics-panel').style.transform = 'scale(1)'; });
+  requestAnimationFrame(() => {
+    modal.style.opacity = '1';
+    const panel = document.getElementById('ethics-panel');
+    if (panel) panel.style.transform = 'scale(1)';
+  });
 }
 function acceptEthicsNotice() {
   try { localStorage.setItem('cosmos_island_ethics_v3', '1'); } catch(e) {}
@@ -6912,7 +6916,7 @@ function renderMovies() {
     }
   };
 }
-const AI_RE对方ONSES = {
+const AI_RESPONSES = {
   "今天情绪很低落": ["抱抱你 🤗 情绪低落的时候，最重要的是不要评判自己。允许自己此刻就是这种感觉。试试深呼吸5次，然后对自己说：'我允许自己感受这一切，但我知道这不是我的终点。' 你想试试看吗？💕","亲爱的，低落的时候就像阴天，太阳并没有消失，只是暂时被云遮住了。☁️→☀️ 你现在在22级情绪刻度的哪一级呢？我们可以从那里慢慢往上走。"],
   "对方不理我怎么办": ["这是现实在试图动摇你，但记住：现实只是旧意识的投影，不是真相！🚫 当对方 '不理你' 的时候，其实是在给你空间去安住在你 '已经被爱' 的状态里。当你感到焦虑时，温柔地把注意力带回内心的平静状态。可以重复你的积极宣言，然后做一些让自己放松的事情。信任和放手不是忽视现实，而是在内心找到安宁。💤💕","🛡️ 启动忽略现实模式！对方不理你 = 你正在 rearranging 这段关系。把 'TA不理我' 改成 'TA正在处理自己的情绪，准备以更成熟的方式回来'。修正法，现在就用！"],
   "我想实现财富": ["太棒了！💰 财富实现第一步：检查你的信念。你觉得 '赚钱很难' 吗？或者 '有钱人不快乐'？如果勾选了，这些就是你要清理的障碍。然后签发一张方法支票，填写你渴望的金额，感受已经拥有的喜悦！","你是满足的磁铁！现在闭上眼睛，想象你的银行账户里有一笔让你惊喜的数字。感受那种安全感、自由感和感谢。让这种感觉充满你... 这就是实现财富的秘密节奏。✨"],
@@ -6954,14 +6958,14 @@ function sendAiPrompt(text) {
   sendAiMessage();
 }
 function generateAiReply(text) {
-  for(const key in AI_RE对方ONSES) { if(key === 'default') continue; if(text.includes(key) || key.includes(text.substring(0,6))) { const r = AI_RE对方ONSES[key]; return r[Math.floor(Math.random()*r.length)]; } }
-  for(const key in AI_RE对方ONSES) { if(key === 'default') continue; if(text.includes(key) || key.includes(text.substring(0,6))) { const r = AI_RE对方ONSES[key]; return r[Math.floor(Math.random()*r.length)]; } }
-  if(text.includes('财富') || text.includes('钱') || text.includes('穷')) { const r = AI_RE对方ONSES['我想实现财富']; return r[Math.floor(Math.random()*r.length)]; }
-  if(text.includes('对方') || text.includes('他') || text.includes('她') || text.includes('复合') || text.includes('分手')) { const r = AI_RE对方ONSES['对方不理我怎么办']; return r[Math.floor(Math.random()*r.length)]; }
-  if(text.includes('低落') || text.includes('难过') || text.includes('伤心') || text.includes('哭')) { const r = AI_RE对方ONSES['今天情绪很低落']; return r[Math.floor(Math.random()*r.length)]; }
-  if(text.includes('焦虑') || text.includes('紧张') || text.includes('不安')) { const r = AI_RE对方ONSES['我最近总是焦虑']; return r[Math.floor(Math.random()*r.length)]; }
-  if(text.includes('积极宣言')) { const r = AI_RE对方ONSES['给我一句今天的积极宣言']; return r[Math.floor(Math.random()*r.length)]; }
-  const d = AI_RE对方ONSES['default']; return d[Math.floor(Math.random()*d.length)];
+  for(const key in AI_RESPONSES) { if(key === 'default') continue; if(text.includes(key) || key.includes(text.substring(0,6))) { const r = AI_RESPONSES[key]; return r[Math.floor(Math.random()*r.length)]; } }
+  for(const key in AI_RESPONSES) { if(key === 'default') continue; if(text.includes(key) || key.includes(text.substring(0,6))) { const r = AI_RESPONSES[key]; return r[Math.floor(Math.random()*r.length)]; } }
+  if(text.includes('财富') || text.includes('钱') || text.includes('穷')) { const r = AI_RESPONSES['我想实现财富']; return r[Math.floor(Math.random()*r.length)]; }
+  if(text.includes('对方') || text.includes('他') || text.includes('她') || text.includes('复合') || text.includes('分手')) { const r = AI_RESPONSES['对方不理我怎么办']; return r[Math.floor(Math.random()*r.length)]; }
+  if(text.includes('低落') || text.includes('难过') || text.includes('伤心') || text.includes('哭')) { const r = AI_RESPONSES['今天情绪很低落']; return r[Math.floor(Math.random()*r.length)]; }
+  if(text.includes('焦虑') || text.includes('紧张') || text.includes('不安')) { const r = AI_RESPONSES['我最近总是焦虑']; return r[Math.floor(Math.random()*r.length)]; }
+  if(text.includes('积极宣言')) { const r = AI_RESPONSES['给我一句今天的积极宣言']; return r[Math.floor(Math.random()*r.length)]; }
+  const d = AI_RESPONSES['default']; return d[Math.floor(Math.random()*d.length)];
 }
 let currentShareText = '';
 function openShareCard(text) {

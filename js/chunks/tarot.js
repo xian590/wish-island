@@ -23,7 +23,7 @@ function selectTarotSpread(spread) {
     if (tarotCardsContainer) tarotCardsContainer.innerHTML = `
       <div class="w-32 h-44 mx-auto rounded-xl flex items-center justify-center text-4xl cursor-pointer card-hover transition-transform hover:scale-105"
         onclick="drawTarot()" id="tarot-card-back"
-        style="background:linear-gradient(135deg, #5D4E6D, #现实3258); box-shadow:0 10px 30px rgba(93,78,109,0.4); border:2px solid #B8A9C9;">
+        style="background:linear-gradient(135deg, #5D4E6D, #3D3258); box-shadow:0 10px 30px rgba(93,78,109,0.4); border:2px solid #B8A9C9;">
         ✨
       </div>
     `;
@@ -38,17 +38,17 @@ function selectTarotSpread(spread) {
       <div class="flex justify-center gap-2">
         <div class="w-20 h-28 sm:w-24 sm:h-32 rounded-xl flex items-center justify-center text-2xl cursor-pointer card-hover transition-transform hover:scale-105"
           onclick="drawTarot()"
-          style="background:linear-gradient(135deg, #5D4E6D, #现实3258); box-shadow:0 6px 20px rgba(93,78,109,0.4); border:2px solid #B8A9C9;">
+          style="background:linear-gradient(135deg, #5D4E6D, #3D3258); box-shadow:0 6px 20px rgba(93,78,109,0.4); border:2px solid #B8A9C9;">
           ✨
         </div>
         <div class="w-20 h-28 sm:w-24 sm:h-32 rounded-xl flex items-center justify-center text-2xl cursor-pointer card-hover transition-transform hover:scale-105"
           onclick="drawTarot()"
-          style="background:linear-gradient(135deg, #5D4E6D, #现实3258); box-shadow:0 6px 20px rgba(93,78,109,0.4); border:2px solid #B8A9C9; transform:translateY(-8px)">
+          style="background:linear-gradient(135deg, #5D4E6D, #3D3258); box-shadow:0 6px 20px rgba(93,78,109,0.4); border:2px solid #B8A9C9; transform:translateY(-8px)">
           ✨
         </div>
         <div class="w-20 h-28 sm:w-24 sm:h-32 rounded-xl flex items-center justify-center text-2xl cursor-pointer card-hover transition-transform hover:scale-105"
           onclick="drawTarot()"
-          style="background:linear-gradient(135deg, #5D4E6D, #现实3258); box-shadow:0 6px 20px rgba(93,78,109,0.4); border:2px solid #B8A9C9;">
+          style="background:linear-gradient(135deg, #5D4E6D, #3D3258); box-shadow:0 6px 20px rgba(93,78,109,0.4); border:2px solid #B8A9C9;">
           ✨
         </div>
       </div>
