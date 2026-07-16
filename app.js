@@ -3268,19 +3268,26 @@ function loadDataScript(src, retries = 2) {
 const __chunkCache = {};
 async function loadChunk(name, retries = 2) {
   if (__chunkCache[name]) return __chunkCache[name];
-  try {
-    const mod = await import('./js/chunks/' + name + '.js?v=' + Date.now());
-    __chunkCache[name] = mod;
-    return mod;
-  } catch(e) {
-    if (retries > 0) {
-      await new Promise(r => setTimeout(r, 800));
-      return loadChunk(name, retries - 1);
-    }
-    console.error('Chunk load failed:', name, e);
-    showChunkError(name);
-    throw e;
-  }
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = './js/chunks/' + name + '.js?v=' + Date.now();
+    script.onload = () => {
+      __chunkCache[name] = true;
+      resolve(true);
+    };
+    script.onerror = (e) => {
+      console.error('Chunk load failed:', name, e);
+      if (retries > 0) {
+        setTimeout(() => {
+          loadChunk(name, retries - 1).then(resolve).catch(reject);
+        }, 800);
+      } else {
+        showChunkError(name);
+        reject(new Error('Failed to load chunk: ' + name));
+      }
+    };
+    document.head.appendChild(script);
+  });
 }
 // 预加载 chunk（不执行，只缓存到浏览器）
 function preloadChunk(name) {
