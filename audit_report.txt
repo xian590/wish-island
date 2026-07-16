@@ -1,0 +1,639 @@
+============================================================
+1. SCRIPT LOADING ORDER
+============================================================
+  1. [application/ld+json] (inline) 
+  2. [text/javascript] https://cdn.tailwindcss.com 
+  3. [text/javascript] (inline) 
+  4. [text/javascript] data/affirmations.js  <-- data file
+  5. [text/javascript] data/plans.js  <-- data file
+  6. [text/javascript] data/personality_test.js  <-- data file
+  7. [text/javascript] data/personas.js  <-- data file
+  8. [text/javascript] data/tarot_cards.js  <-- data file
+  9. [text/javascript] data/books.js  <-- data file
+  10. [text/javascript] data/movie_library.js  <-- data file
+  11. [text/javascript] data/methods.js  <-- data file
+  12. [text/javascript] data/treasure_tools.js  <-- data file
+  13. [text/javascript] data/sats_guides.js  <-- data file
+  14. [text/javascript] data/courses.js  <-- data file
+  15. [text/javascript] data/guides.js  <-- data file
+  16. [text/javascript] data/new_badges.js  <-- data file
+  17. [text/javascript] data/emotion_scale.js  <-- data file
+  18. [text/javascript] data/belief_test.js  <-- data file
+  19. [text/javascript] https://cdn.jsdelivr.net/npm/chart.js@4 
+  20. [text/javascript] https://cdn.jsdelivr.net/npm/qrcode@1/build/qrcode.min.js 
+  21. [module] app.js?v=7  <-- ES MODULE
+  22. [text/javascript] js/track.js  <-- AFTER app.js
+  23. [text/javascript] js/test_runner.js  <-- AFTER app.js
+  24. [text/javascript] (inline) 
+Data files BEFORE app.js: 15
+Data files AFTER app.js: 0
+
+============================================================
+2. INLINE EVENT HANDLERS IN HTML
+============================================================
+Total inline handlers: 504
+Unique onclick functions: 173
+  - addCustomAffirm
+  - addHabit
+  - addIncomeLog
+  - addInspirationAction
+  - addMDDiet
+  - addVisionCard
+  - challengeCheckIn
+  - changeHabitMonth
+  - checkWealthBeliefs
+  - clearCache
+  - clearVisionImage
+  - closeAffirmModal
+  - closeAlert
+  - closeBookModal
+  - closeBookReader
+  - closeCourseModal
+  - closeDiaryModal
+  - closeFeedbackModal
+  - closeHabitModal
+  - closeLimitedOffer
+  - closeLockModal
+  - closePasswordModal
+  - closePlan
+  - closeSettings
+  - closeShareCard
+  - closeWishDetail
+  - completeCBTPurify
+  - confirmImport
+  - copyAllData
+  - copyDataText
+  - copyInviteCode
+  - copyShareText
+  - createWishStar
+  - cycleWeather
+  - cycleWeatherSetting
+  - deletePin
+  - doCheckIn
+  - doEmotionPractice
+  - downloadShareCard
+  - drawTarot
+  - enterPin
+  - exportAllData
+  - exportData
+  - exportPDFReport
+  - exportSelectedData
+  - fillVoiceInput
+  - filterStories
+  - generateDataQR
+  - getElementById
+  - goBack
+  - goHome
+  - hideModal
+  - if
+  - importAllData
+  - importFromFile
+  - importFromQRText
+  - loadDataScript
+  - newDiaryPrompt
+  - nextCBTStep
+  - nextHabitMonth
+  - nextPage
+  - nextSatsStep
+  - nextTutorialStep
+  - openAffirmCollection
+  - openAffirmModal
+  - openAffirmRadio
+  - openBadgeWall
+  - openCardCollection
+  - openCrystalPage
+  - openFortune
+  - openGrowthPage
+  - openHabitModal
+  - openMentalDiet
+  - openModule
+  - openNewWishModal
+  - openRevision
+  - openSearch
+  - openSettings
+  - openZodiacFortune
+  - pauseAudio
+  - pauseSatsTimer
+  - pauseSleepStory
+  - playSleepStory
+  - playVisionSats
+  - prevCBTStep
+  - prevHabitMonth
+  - prevPage
+  - prevSatsStep
+  - quickMDDiet
+  - refreshDailyAffirm
+  - resetBootcamp
+  - resetSatsTimer
+  - resetTarot
+  - resetTimer
+  - retryLoadChunk
+  - saveBirthday
+  - saveDiary
+  - saveDream
+  - saveEmotionNote
+  - saveMagicCheck
+  - selectAllExport
+  - selectBreatheMode
+  - selectDiaryTemplate
+  - selectHabitCat
+  - selectHabitFreq
+  - selectPaperSkin
+  - selectPlan
+  - selectSubscriptionPlan
+  - selectTarotCat
+  - selectTarotSpread
+  - selectTimerDuration
+  - selectTimerMode
+  - selectVoice
+  - selectWishType
+  - sendAiMessage
+  - sendAiPrompt
+  - setBreatheAmbient
+  - setEmotionLevel
+  - setLang
+  - setTheme
+  - setupPassword
+  - shareBootcampCertificate
+  - showDiaryHistory
+  - showFeedbackModal
+  - showImportInput
+  - showInvitePage
+  - showPage
+  - showToast
+  - showVipPlans
+  - skipTutorial
+  - speakDailyAffirm
+  - startBreathe
+  - startRevision
+  - startSATS
+  - startSatsTimer
+  - startTest
+  - startVisitorMode
+  - startWelcomeTest
+  - stopAllAudio
+  - stopBreathe
+  - stopPropagation
+  - stopRevision
+  - stopSATS
+  - stopSleepStory
+  - submitCommunityPost
+  - submitFeedback
+  - submitInviteCode
+  - submitStory
+  - switchAffirmCat
+  - switchLibTab
+  - switchMediaTab
+  - switchMoodReport
+  - switchSpCategory
+  - switchTab
+  - toggleBookmark
+  - toggleBreatheAmbient
+  - toggleBreatheTone
+  - toggleDarkMode
+  - toggleDistortion
+  - toggleFullscreen
+  - toggleHabitWeekday
+  - toggleIgnore3D
+  - toggleMoodTag
+  - toggleNotePanel
+  - toggleNotificationPermission
+  - toggleRevision
+  - toggleSATS
+  - toggleSetting
+  - toggleTimer
+  - toggleToc
+  - toggleVoiceRecord
+  - toggleWhiteNoise
+  - unlockWithCrystals
+
+============================================================
+3. FUNCTIONS EXPOSED TO WINDOW IN app.js
+============================================================
+Total exposed: 291
+  - BADGES
+  - DEFAULT_STATE
+  - DraftAutoSave
+  - LEVELS
+  - MOOD_CATEGORIES
+  - MOOD_NAMES
+  - TITLE_PRESETS
+  - VOICE_OPTIONS
+  - __batteryLow
+  - __bodyScrollTop
+  - __broadcastChannel
+  - __clickSparkleBound
+  - __connectionSlow
+  - __errorCount
+  - __eveningTimer
+  - __longTaskCount
+  - __morningTimer
+  - __pendingImport
+  - __qrSyncData
+  - __resizeObservers
+  - __storageDowngraded
+  - __wakeLock
+  - acceptEthicsNotice
+  - addAffirmLoopItem
+  - addCreationBoxItem
+  - addHabit
+  - addIncomeLog
+  - addPlacematTask
+  - addRampageItem
+  - addVisionCard
+  - broadcastStateUpdate
+  - broadcastStorageUpdate
+  - challengeCheckIn
+  - changeHabitMonth
+  - checkWealthBeliefs
+  - clearAppBadge
+  - clearCache
+  - clearVisionImage
+  - closeAlert
+  - closeHabitModal
+  - closeLimitedOffer
+  - closeLockModal
+  - closePasswordModal
+  - closePersona
+  - closePlan
+  - closeSettings
+  - closeShareCard
+  - closeTest
+  - closeTestResult
+  - collectPersonaAffirmations
+  - completeCBTPurify
+  - completeRampage
+  - confirmImport
+  - copyAllData
+  - copyDataText
+  - copyInviteCode
+  - copyShareText
+  - cycleWeather
+  - cycleWeatherSetting
+  - deepSanitize
+  - deleteCreationBoxItem
+  - deleteHabit
+  - deletePin
+  - deletePlacematTask
+  - deleteStorageKey
+  - deleteVisionCard
+  - deleteVoiceRecording
+  - disableShake
+  - dismissJourney
+  - dismissVisitorBanner
+  - doCheckIn
+  - downloadShareCard
+  - enableShake
+  - enterIslandFromTest
+  - enterPin
+  - escapeHtml
+  - execSmartRec
+  - exportAllData
+  - exportData
+  - exportPDFReport
+  - exportSelectedData
+  - fallbackExport
+  - fillVoiceInput
+  - filterStories
+  - flipVisionCard
+  - generateDataQR
+  - getJourneyDay
+  - getTitle
+  - goBack
+  - goHome
+  - handleShake
+  - handleVisionImage
+  - hideModal
+  - importAllData
+  - importFromFile
+  - importFromQRText
+  - initAbout
+  - initAffirmLoop
+  - initBadgeWall
+  - initBreathe
+  - initBroadcastChannel
+  - initCleanup
+  - initCreationBox
+  - initEmoscale
+  - initEmotion
+  - initHabitCalendar
+  - initHealth
+  - initHealthMonitor
+  - initImageLazyLoad
+  - initManifestReport
+  - initMovies
+  - initPillow
+  - initPlacemat
+  - initProsperity
+  - initQrSync
+  - initRampage
+  - initRemember
+  - initReports
+  - initShakeForFortune
+  - initSleep
+  - initSp
+  - initStats
+  - initTimeline
+  - initTreasureBox
+  - initVip
+  - initVisionBoard
+  - initVisionDropZone
+  - initVoice
+  - initZodiacAndBirthday
+  - isFullMoon
+  - loadDataScript
+  - logDiet
+  - markTreasureTried
+  - nextAffirm
+  - nextCBTStep
+  - nextHabitMonth
+  - nextProsperityDay
+  - nextSatsStep
+  - nextTestQ
+  - nextTutorialStep
+  - observeResize
+  - onEmotionSlide
+  - onerror
+  - openAffirmCollection
+  - openAffirmRadio
+  - openBadgeWall
+  - openBookDetail
+  - openCardCollection
+  - openCrystalPage
+  - openFortune
+  - openGrowthPage
+  - openHabitModal
+  - openMentalDiet
+  - openModule
+  - openRevision
+  - openSettings
+  - openTreasureNote
+  - openZodiacFortune
+  - pauseAudio
+  - pauseSatsTimer
+  - pauseSleepStory
+  - playAffirmCategory
+  - playAffirmSubcat
+  - playSleepStory
+  - playSpScene
+  - playTypeSound
+  - playVisionSats
+  - playVoiceRecording
+  - prevAffirm
+  - prevCBTStep
+  - prevHabitMonth
+  - prevSatsStep
+  - recordMood
+  - refreshDailyAffirm
+  - removePalaceAffirm
+  - render7DayJourney
+  - renderGrowth
+  - renderLibrary
+  - renderSatsHistory
+  - renderTarot
+  - resetAllData
+  - resetSatsTimer
+  - resetTimer
+  - retryLoadChunk
+  - runWhenReady
+  - saveBirthday
+  - saveDream
+  - saveEmotionNote
+  - saveMagicCheck
+  - saveMoodNote
+  - savePillowWish
+  - savePlacematDay
+  - saveProsperityDay
+  - saveRemember
+  - saveReminderTime
+  - saveRevisionNote
+  - saveState
+  - scheduleDailyReminders
+  - selectAllExport
+  - selectBreatheMode
+  - selectEmoLevel
+  - selectHabitCat
+  - selectHabitFreq
+  - selectPlan
+  - selectSatsScene
+  - selectSubscriptionPlan
+  - selectTestOpt
+  - selectTimerDuration
+  - selectTimerMode
+  - selectVoice
+  - sendAiMessage
+  - sendAiPrompt
+  - sendNotification
+  - setAffirmLoopInterval
+  - setBreatheAmbient
+  - setLang
+  - setTheme
+  - setTitlePreference
+  - setVolume
+  - setupPassword
+  - shareContent
+  - showAffirmSubcats
+  - showBadgeUnlock
+  - showEthicsNotice
+  - showHabitDayDetail
+  - showImportInput
+  - showInstallPrompt
+  - showInvitePage
+  - showModal
+  - showPage
+  - showPageSkeleton
+  - showToast
+  - showVipPlans
+  - showVisitorBanner
+  - showWeekReport
+  - skipTutorial
+  - speakAffirm
+  - speakDailyAffirm
+  - start7DayJourney
+  - startAudioScene
+  - startBreathe
+  - startJourneyStep
+  - startRevision
+  - startSatsTimer
+  - startTest
+  - startTestFromBanner
+  - startVisitorMode
+  - startWelcomeTest
+  - state
+  - stopAllAudio
+  - stopBreathe
+  - stopRevision
+  - stopSleepStory
+  - submitInviteCode
+  - submitStory
+  - switchMoodReport
+  - switchSpCategory
+  - switchTab
+  - switchTreasureCategory
+  - t
+  - toggleAffirmLoop
+  - toggleAffirmLoopItem
+  - toggleAffirmPlay
+  - toggleBreatheAmbient
+  - toggleBreatheTone
+  - toggleDarkMode
+  - toggleDistortion
+  - toggleFullscreen
+  - toggleHabitCheckin
+  - toggleHabitWeekday
+  - toggleIgnore3D
+  - toggleMoodExpanded
+  - toggleMoodTag
+  - toggleNotificationPermission
+  - togglePassword
+  - togglePlanTask
+  - toggleRevision
+  - toggleSetting
+  - toggleTimer
+  - toggleTreasureFav
+  - toggleVoiceRecord
+  - toggleWhiteNoise
+  - toggleWishTimeline
+  - unlockWithCrystals
+  - updateAppBadge
+  - updateNickname
+  - updateStorageInfo
+  - vibrateFor
+  - viewCBTRecord
+  - viewPersona
+  - virtualScroll
+POTENTIALLY MISSING (46):
+  !! addCustomAffirm
+  !! addInspirationAction
+  !! addMDDiet
+  !! closeAffirmModal
+  !! closeBookModal
+  !! closeBookReader
+  !! closeCourseModal
+  !! closeDiaryModal
+  !! closeFeedbackModal
+  !! closeWishDetail
+  !! createWishStar
+  !! doEmotionPractice
+  !! drawTarot
+  !! getElementById
+  !! if
+  !! newDiaryPrompt
+  !! nextPage
+  !! openAffirmModal
+  !! openNewWishModal
+  !! openSearch
+  !! prevPage
+  !! quickMDDiet
+  !! resetBootcamp
+  !! resetTarot
+  !! saveDiary
+  !! selectDiaryTemplate
+  !! selectPaperSkin
+  !! selectTarotCat
+  !! selectTarotSpread
+  !! selectWishType
+  !! setEmotionLevel
+  !! shareBootcampCertificate
+  !! showDiaryHistory
+  !! showFeedbackModal
+  !! startSATS
+  !! stopPropagation
+  !! stopSATS
+  !! submitCommunityPost
+  !! submitFeedback
+  !! switchAffirmCat
+  !! switchLibTab
+  !! switchMediaTab
+  !! toggleBookmark
+  !! toggleNotePanel
+  !! toggleSATS
+  !! toggleToc
+
+============================================================
+4. CSS POINTER-EVENTS & OVERLAY
+============================================================
+'pointer-events' occurrences: 7
+  Value: 'none'
+  Value: 'none'
+  Value: 'none'
+'modal-backdrop': 24 occurrences
+'overlay': 1 occurrences
+'backdrop': 39 occurrences
+
+============================================================
+5. DOMContentLoaded / INIT
+============================================================
+DOMContentLoaded FOUND in app.js
+document.addEventListener FOUND
+init pattern found: True
+
+============================================================
+6. TRY-CATCH SILENT SWALLOWING
+============================================================
+Total try-catch blocks: 129
+Potentially silent catch blocks: 121
+
+============================================================
+7. LOCALSTORAGE
+============================================================
+  'localStorage.getItem': 23 occurrences
+  'localStorage.setItem': 19 occurrences
+  'localStorage.removeItem': 3 occurrences
+  'localStorage.clear': 1 occurrences
+
+============================================================
+8. INNERHTML/INSERTADJACENTHTML WITH ONCLICK
+============================================================
+innerHTML assignments with onclick: 0
+insertAdjacentHTML calls with onclick: 0
+
+============================================================
+9. SERVICE WORKER
+============================================================
+Service Worker registration found
+sw.js exists (1336 chars)
+WARNING: Service Worker uses caching
+
+============================================================
+10. ADDEVENTLISTENER
+============================================================
+Total addEventListener: 50
+Top targets:
+  document: 22
+  window: 9
+  islandPage: 3
+  battery: 2
+  navigator.serviceWorker: 2
+  container: 1
+  el: 1
+  window.__wakeLock: 1
+Top event types:
+  click: 7
+  touchstart: 4
+  touchend: 4
+  keydown: 3
+  DOMContentLoaded: 3
+  unhandledrejection: 2
+  visibilitychange: 2
+  message: 2
+
+============================================================
+11. MODULE-LEVEL EXECUTION
+============================================================
+Total lines (CR normalized): 69
+WARNING: 'document.querySelector' in first 30 lines - potential DOM-not-ready race
+WARNING: 'document.getElementById' in first 30 lines - potential DOM-not-ready race
+WARNING: 'window.addEventListener' in first 30 lines - potential DOM-not-ready race
+
+============================================================
+12. CSP
+============================================================
+CSP: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts...
+
+============================================================
+13. CRITICAL: app.js LINE ENDINGS
+============================================================
+Contains CR: True
+Contains LF: True
+Contains CRLF: True

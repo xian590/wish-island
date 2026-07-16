@@ -1,0 +1,378 @@
+============================================================
+  显化岛 PWA - onclick 函数定义排查报告（修正版）
+============================================================
+
+【统计】
+  - 总 onclick 调用数量: 484
+  - 提取到的唯一函数名数量: 203
+  - 已匹配函数数量: 154
+  - 缺失函数数量: 49
+  - template literal 问题数量: 0
+
+【提取到的 onclick 函数名列表】
+  ❌ 缺失 addCustomAffirm
+  ✅ 已定义 addHabit
+  ✅ 已定义 addIncomeLog
+  ❌ 缺失 addInspirationAction
+  ❌ 缺失 addMDDiet
+  ✅ 已定义 addVisionCard
+  ✅ 已定义 challengeCheckIn
+  ✅ 已定义 changeHabitMonth
+  ✅ 已定义 checkWealthBeliefs
+  ✅ 已定义 clearCache
+  ✅ 已定义 clearVisionImage
+  ❌ 缺失 closeAffirmModal
+  ✅ 已定义 closeAlert
+  ❌ 缺失 closeBookModal
+  ❌ 缺失 closeBookReader
+  ❌ 缺失 closeCourseModal
+  ❌ 缺失 closeDiaryModal
+  ❌ 缺失 closeFeedbackModal
+  ✅ 已定义 closeHabitModal
+  ✅ 已定义 closeLimitedOffer
+  ✅ 已定义 closeLockModal
+  ✅ 已定义 closePasswordModal
+  ✅ 已定义 closePlan
+  ✅ 已定义 closeSettings
+  ✅ 已定义 closeShareCard
+  ✅ 已定义 closeTest
+  ❌ 缺失 closeWishDetail
+  ✅ 已定义 completeCBTPurify
+  ✅ 已定义 confirmImport
+  ✅ 已定义 copyAllData
+  ✅ 已定义 copyDataText
+  ✅ 已定义 copyInviteCode
+  ✅ 已定义 copyShareText
+  ❌ 缺失 createWishStar
+  ✅ 已定义 cycleWeather
+  ✅ 已定义 cycleWeatherSetting
+  ✅ 已定义 deletePin
+  ✅ 已定义 doCheckIn
+  ❌ 缺失 doEmotionPractice
+  ✅ 已定义 downloadShareCard
+  ❌ 缺失 drawTarot
+  ✅ 已定义 enterPin
+  ✅ 已定义 exportAllData
+  ✅ 已定义 exportData
+  ✅ 已定义 exportPDFReport
+  ✅ 已定义 exportSelectedData
+  ✅ 已定义 fillVoiceInput
+  ✅ 已定义 filterStories
+  ✅ 已定义 generateDataQR
+  ✅ 已定义 goBack
+  ✅ 已定义 goHome
+  ✅ 已定义 hideModal
+  ✅ 已定义 importAllData
+  ✅ 已定义 importFromFile
+  ✅ 已定义 importFromQRText
+  ❌ 缺失 init369
+  ❌ 缺失 init55x5
+  ❌ 缺失 init68sec
+  ✅ 已定义 initAbout
+  ✅ 已定义 initAffirmLoop
+  ✅ 已定义 initBadgeWall
+  ✅ 已定义 initBreathe
+  ✅ 已定义 initCleanup
+  ✅ 已定义 initCreationBox
+  ✅ 已定义 initEmoscale
+  ✅ 已定义 initEmotion
+  ✅ 已定义 initHabitCalendar
+  ✅ 已定义 initHealth
+  ✅ 已定义 initManifestReport
+  ✅ 已定义 initPillow
+  ✅ 已定义 initPlacemat
+  ✅ 已定义 initProsperity
+  ✅ 已定义 initQrSync
+  ✅ 已定义 initRampage
+  ✅ 已定义 initRemember
+  ✅ 已定义 initReports
+  ❌ 缺失 initSigns
+  ✅ 已定义 initSleep
+  ✅ 已定义 initStats
+  ✅ 已定义 initTimeline
+  ✅ 已定义 initTreasureBox
+  ✅ 已定义 initVip
+  ✅ 已定义 initVisionBoard
+  ✅ 已定义 initVoice
+  ❌ 缺失 initWheel
+  ✅ 已定义 loadDataScript
+  ❌ 缺失 newDiaryPrompt
+  ✅ 已定义 nextCBTStep
+  ✅ 已定义 nextHabitMonth
+  ❌ 缺失 nextPage
+  ✅ 已定义 nextSatsStep
+  ✅ 已定义 nextTutorialStep
+  ✅ 已定义 openAffirmCollection
+  ❌ 缺失 openAffirmModal
+  ✅ 已定义 openAffirmRadio
+  ✅ 已定义 openBadgeWall
+  ✅ 已定义 openCardCollection
+  ✅ 已定义 openCrystalPage
+  ✅ 已定义 openFortune
+  ✅ 已定义 openGrowthPage
+  ✅ 已定义 openHabitModal
+  ✅ 已定义 openMentalDiet
+  ✅ 已定义 openModule
+  ❌ 缺失 openNewWishModal
+  ✅ 已定义 openRevision
+  ❌ 缺失 openSearch
+  ✅ 已定义 openSettings
+  ✅ 已定义 openZodiacFortune
+  ✅ 已定义 pauseAudio
+  ✅ 已定义 pauseSatsTimer
+  ✅ 已定义 pauseSleepStory
+  ✅ 已定义 playSleepStory
+  ✅ 已定义 playVisionSats
+  ✅ 已定义 prevCBTStep
+  ✅ 已定义 prevHabitMonth
+  ❌ 缺失 prevPage
+  ✅ 已定义 prevSatsStep
+  ❌ 缺失 quickMDDiet
+  ✅ 已定义 recordMood
+  ✅ 已定义 refreshDailyAffirm
+  ❌ 缺失 renderCommunityFeed
+  ❌ 缺失 resetBootcamp
+  ✅ 已定义 resetSatsTimer
+  ❌ 缺失 resetTarot
+  ✅ 已定义 resetTimer
+  ✅ 已定义 retryLoadChunk
+  ✅ 已定义 saveBirthday
+  ❌ 缺失 saveDiary
+  ✅ 已定义 saveDream
+  ✅ 已定义 saveEmotionNote
+  ✅ 已定义 saveMagicCheck
+  ✅ 已定义 selectAllExport
+  ✅ 已定义 selectBreatheMode
+  ❌ 缺失 selectDiaryTemplate
+  ✅ 已定义 selectHabitCat
+  ✅ 已定义 selectHabitFreq
+  ❌ 缺失 selectPaperSkin
+  ✅ 已定义 selectPlan
+  ✅ 已定义 selectSubscriptionPlan
+  ❌ 缺失 selectTarotCat
+  ❌ 缺失 selectTarotSpread
+  ✅ 已定义 selectTimerDuration
+  ✅ 已定义 selectTimerMode
+  ✅ 已定义 selectVoice
+  ❌ 缺失 selectWishType
+  ✅ 已定义 sendAiMessage
+  ✅ 已定义 sendAiPrompt
+  ✅ 已定义 setBreatheAmbient
+  ❌ 缺失 setEmotionLevel
+  ✅ 已定义 setLang
+  ✅ 已定义 setTheme
+  ✅ 已定义 setupPassword
+  ❌ 缺失 shareBootcampCertificate
+  ❌ 缺失 showDiaryHistory
+  ❌ 缺失 showFeedbackModal
+  ✅ 已定义 showImportInput
+  ✅ 已定义 showInvitePage
+  ✅ 已定义 showPage
+  ✅ 已定义 showToast
+  ✅ 已定义 showVipPlans
+  ✅ 已定义 skipTutorial
+  ✅ 已定义 speakDailyAffirm
+  ✅ 已定义 startBreathe
+  ✅ 已定义 startRevision
+  ❌ 缺失 startSATS
+  ✅ 已定义 startSatsTimer
+  ✅ 已定义 startTest
+  ✅ 已定义 startWelcomeTest
+  ✅ 已定义 stopAllAudio
+  ✅ 已定义 stopBreathe
+  ✅ 已定义 stopRevision
+  ❌ 缺失 stopSATS
+  ✅ 已定义 stopSleepStory
+  ❌ 缺失 submitCommunityPost
+  ❌ 缺失 submitFeedback
+  ✅ 已定义 submitInviteCode
+  ✅ 已定义 submitStory
+  ❌ 缺失 switchAffirmCat
+  ❌ 缺失 switchLibTab
+  ❌ 缺失 switchMediaTab
+  ✅ 已定义 switchMoodReport
+  ✅ 已定义 switchSpCategory
+  ✅ 已定义 switchTab
+  ❌ 缺失 toggleBookmark
+  ✅ 已定义 toggleBreatheAmbient
+  ✅ 已定义 toggleBreatheTone
+  ✅ 已定义 toggleDarkMode
+  ✅ 已定义 toggleDistortion
+  ✅ 已定义 toggleFullscreen
+  ✅ 已定义 toggleHabitWeekday
+  ✅ 已定义 toggleIgnore3D
+  ✅ 已定义 toggleMoodTag
+  ❌ 缺失 toggleNotePanel
+  ✅ 已定义 toggleNotificationPermission
+  ✅ 已定义 togglePassword
+  ✅ 已定义 toggleRevision
+  ❌ 缺失 toggleSATS
+  ✅ 已定义 toggleSetting
+  ✅ 已定义 toggleTimer
+  ❌ 缺失 toggleToc
+  ✅ 已定义 toggleVoiceRecord
+  ✅ 已定义 toggleWhiteNoise
+  ✅ 已定义 unlockWithCrystals
+
+【缺失函数详情（按严重度）】
+  ❌ addCustomAffirm
+      上下文: addCustomAffirm()
+  ❌ addInspirationAction
+      上下文: addInspirationAction()
+  ❌ addMDDiet
+      上下文: addMDDiet()
+  ❌ closeAffirmModal
+      上下文: closeAffirmModal()
+  ❌ closeBookModal
+      上下文: closeBookModal()
+  ❌ closeBookReader
+      上下文: closeBookReader()
+  ❌ closeCourseModal
+      上下文: closeCourseModal()
+  ❌ closeDiaryModal
+      上下文: closeDiaryModal()
+      上下文: closeDiaryModal(); switchTab('journal')
+  ❌ closeFeedbackModal
+      上下文: if(event.target===this)closeFeedbackModal()
+      上下文: closeFeedbackModal()
+  ❌ closeWishDetail
+      上下文: closeWishDetail()
+  ❌ createWishStar
+      上下文: createWishStar()
+  ❌ doEmotionPractice
+      上下文: doEmotionPractice('EFT敲击')
+      上下文: doEmotionPractice('478呼吸')
+      上下文: doEmotionPractice('书写释放')
+  ❌ drawTarot
+      上下文: drawTarot()
+      上下文: drawTarot()
+  ❌ init369
+      上下文: showPage('369');init369()
+  ❌ init55x5
+      上下文: showPage('55x5');init55x5()
+  ❌ init68sec
+      上下文: showPage('68sec');init68sec()
+  ❌ initSigns
+      上下文: showPage('signs');initSigns()
+  ❌ initWheel
+      上下文: showPage('wheel');initWheel()
+  ❌ newDiaryPrompt
+      上下文: newDiaryPrompt()
+  ❌ nextPage
+      上下文: nextPage()
+  ❌ openAffirmModal
+      上下文: openAffirmModal()
+  ❌ openNewWishModal
+      上下文: openNewWishModal()
+  ❌ openSearch
+      上下文: openSearch()
+  ❌ prevPage
+      上下文: prevPage()
+  ❌ quickMDDiet
+      上下文: quickMDDiet('我不够好')
+      上下文: quickMDDiet('他不爱我')
+      上下文: quickMDDiet('我赚不到钱')
+      ... 还有 3 处调用
+  ❌ renderCommunityFeed
+      上下文: showPage('community');renderCommunityFeed()
+  ❌ resetBootcamp
+      上下文: resetBootcamp()
+  ❌ resetTarot
+      上下文: resetTarot()
+  ❌ saveDiary
+      上下文: saveDiary()
+  ❌ selectDiaryTemplate
+      上下文: selectDiaryTemplate('gratitude', this)
+      上下文: selectDiaryTemplate('future', this)
+      上下文: selectDiaryTemplate('success', this)
+  ❌ selectPaperSkin
+      上下文: selectPaperSkin('sakura', this)
+      上下文: selectPaperSkin('star', this)
+      上下文: selectPaperSkin('rose', this)
+      ... 还有 2 处调用
+  ❌ selectTarotCat
+      上下文: selectTarotCat('love')
+      上下文: selectTarotCat('career')
+      上下文: selectTarotCat('emotion')
+      ... 还有 1 处调用
+  ❌ selectTarotSpread
+      上下文: selectTarotSpread('single')
+      上下文: selectTarotSpread('three')
+  ❌ selectWishType
+      上下文: selectWishType('love', this)
+      上下文: selectWishType('money', this)
+      上下文: selectWishType('beauty', this)
+      ... 还有 3 处调用
+  ❌ setEmotionLevel
+      上下文: setEmotionLevel(5)
+      上下文: setEmotionLevel(25)
+      上下文: setEmotionLevel(50)
+      ... 还有 2 处调用
+  ❌ shareBootcampCertificate
+      上下文: shareBootcampCertificate()
+  ❌ showDiaryHistory
+      上下文: showDiaryHistory()
+  ❌ showFeedbackModal
+      上下文: showFeedbackModal()
+  ❌ startSATS
+      上下文: startSATS('恋爱SP')
+      上下文: startSATS('财富事业')
+      上下文: startSATS('美貌自信')
+      ... 还有 1 处调用
+  ❌ stopSATS
+      上下文: stopSATS()
+  ❌ submitCommunityPost
+      上下文: submitCommunityPost()
+  ❌ submitFeedback
+      上下文: submitFeedback()
+  ❌ switchAffirmCat
+      上下文: switchAffirmCat('love', this)
+      上下文: switchAffirmCat('money', this)
+      上下文: switchAffirmCat('beauty', this)
+      ... 还有 3 处调用
+  ❌ switchLibTab
+      上下文: switchLibTab('course', this)
+      上下文: switchLibTab('books', this)
+      上下文: switchLibTab('methods', this)
+      ... 还有 3 处调用
+  ❌ switchMediaTab
+      上下文: switchMediaTab('movies', this)
+      上下文: switchMediaTab('music', this)
+  ❌ toggleBookmark
+      上下文: toggleBookmark()
+  ❌ toggleNotePanel
+      上下文: toggleNotePanel()
+      上下文: toggleNotePanel()
+  ❌ toggleSATS
+      上下文: toggleSATS()
+  ❌ toggleToc
+      上下文: toggleToc()
+      上下文: toggleToc()
+
+【Template Literal 问题】
+  ✅ 未发现 template literal 形式的 onclick
+
+【app.js 中定义/挂载的函数统计】
+  function 定义: 534 个
+  window 挂载: 210 个
+  var/let/const function: 1 个
+  箭头函数: 13 个
+
+【修复建议】
+  1. 在 app.js 中补全缺失函数定义，或使用 window.xxx = xxx 挂载已有函数。
+  2. 建议将高频调用函数（如 goHome, openSettings）挂载到 window。
+  3. 考虑将 onclick 改为 addEventListener 绑定，减少全局函数依赖。
+  4. 以下模块缺失较多，建议优先检查：
+     - 许愿模块: selectWishType, createWishStar, openNewWishModal, closeWishDetail
+     - SATS冥想模块: startSATS, toggleSATS, stopSATS
+     - 心理饮食模块: quickMDDiet, addMDDiet
+     - 情绪管理模块: setEmotionLevel, doEmotionPractice
+     - 肯定语模块: openAffirmModal, switchAffirmCat, addCustomAffirm, closeAffirmModal
+     - 日记模块: selectDiaryTemplate, selectPaperSkin, saveDiary, showDiaryHistory, newDiaryPrompt, closeDiaryModal
+     - 书馆模块: switchLibTab, switchMediaTab, closeBookModal, closeBookReader, toggleBookmark, toggleNotePanel, toggleToc, prevPage, nextPage
+     - 塔罗模块: selectTarotSpread, selectTarotCat, drawTarot, resetTarot
+     - 社区/反馈模块: renderCommunityFeed, openSearch, showFeedbackModal, submitCommunityPost, submitFeedback, closeFeedbackModal
+     - 训练营模块: init369, init55x5, initSigns, initWheel, init68sec, shareBootcampCertificate, resetBootcamp
+     - 课程/愿景模块: closeCourseModal, addInspirationAction
+
+============================================================

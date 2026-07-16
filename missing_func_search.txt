@@ -1,0 +1,46 @@
+============================================================
+MISSING FUNCTIONS SEARCH ACROSS ALL JS FILES
+============================================================
+  !! 'addCustomAffirm' NOT FOUND in ANY JS file
+  !! 'addInspirationAction' NOT FOUND in ANY JS file
+  !! 'addMDDiet' NOT FOUND in ANY JS file
+  !! 'closeAffirmModal' NOT FOUND in ANY JS file
+  !! 'closeBookModal' NOT FOUND in ANY JS file
+  !! 'closeBookReader' NOT FOUND in ANY JS file
+  !! 'closeCourseModal' NOT FOUND in ANY JS file
+  !! 'closeDiaryModal' NOT FOUND in ANY JS file
+  !! 'closeFeedbackModal' NOT FOUND in ANY JS file
+  !! 'closeWishDetail' NOT FOUND in ANY JS file
+  !! 'createWishStar' NOT FOUND in ANY JS file
+  !! 'doEmotionPractice' NOT FOUND in ANY JS file
+  !! 'drawTarot' NOT FOUND in ANY JS file
+  !! 'newDiaryPrompt' NOT FOUND in ANY JS file
+  !! 'nextPage' NOT FOUND in ANY JS file
+  !! 'openAffirmModal' NOT FOUND in ANY JS file
+  !! 'openNewWishModal' NOT FOUND in ANY JS file
+  !! 'openSearch' NOT FOUND in ANY JS file
+  !! 'prevPage' NOT FOUND in ANY JS file
+  !! 'quickMDDiet' NOT FOUND in ANY JS file
+  !! 'resetBootcamp' NOT FOUND in ANY JS file
+  !! 'resetTarot' NOT FOUND in ANY JS file
+  !! 'saveDiary' NOT FOUND in ANY JS file
+  !! 'selectDiaryTemplate' NOT FOUND in ANY JS file
+  !! 'selectPaperSkin' NOT FOUND in ANY JS file
+  !! 'selectTarotCat' NOT FOUND in ANY JS file
+  !! 'selectTarotSpread' NOT FOUND in ANY JS file
+  !! 'selectWishType' NOT FOUND in ANY JS file
+  !! 'setEmotionLevel' NOT FOUND in ANY JS file
+  !! 'shareBootcampCertificate' NOT FOUND in ANY JS file
+  !! 'showDiaryHistory' NOT FOUND in ANY JS file
+  !! 'showFeedbackModal' NOT FOUND in ANY JS file
+  !! 'startSATS' NOT FOUND in ANY JS file
+  !! 'stopSATS' NOT FOUND in ANY JS file
+  !! 'submitCommunityPost' NOT FOUND in ANY JS file
+  EXISTS in ['search_fns.js'] but NOT exposed to window
+  !! 'switchAffirmCat' NOT FOUND in ANY JS file
+  !! 'switchLibTab' NOT FOUND in ANY JS file
+  !! 'switchMediaTab' NOT FOUND in ANY JS file
+  !! 'toggleBookmark' NOT FOUND in ANY JS file
+  !! 'toggleNotePanel' NOT FOUND in ANY JS file
+  !! 'toggleSATS' NOT FOUND in ANY JS file
+  !! 'toggleToc' NOT FOUND in ANY JS file

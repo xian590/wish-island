@@ -1,0 +1,161 @@
+============================================================
+MISSING FUNCTIONS DEEP CHECK
+============================================================
+  !! CRITICAL: 'addCustomAffirm' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'addInspirationAction' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'addMDDiet' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'closeAffirmModal' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'closeBookModal' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'closeBookReader' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'closeCourseModal' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'closeDiaryModal' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'closeFeedbackModal' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'closeWishDetail' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'createWishStar' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'doEmotionPractice' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'drawTarot' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'newDiaryPrompt' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'nextPage' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'openAffirmModal' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'openNewWishModal' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'openSearch' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'prevPage' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'quickMDDiet' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'resetBootcamp' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'resetTarot' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'saveDiary' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'selectDiaryTemplate' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'selectPaperSkin' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'selectTarotCat' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'selectTarotSpread' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'selectWishType' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'setEmotionLevel' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'shareBootcampCertificate' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'showDiaryHistory' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'showFeedbackModal' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'startSATS' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'stopSATS' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'submitCommunityPost' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'submitFeedback' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'switchAffirmCat' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'switchLibTab' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'switchMediaTab' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'toggleBookmark' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'toggleNotePanel' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'toggleSATS' NOT FOUND in app.js but used in HTML onclick
+  !! CRITICAL: 'toggleToc' NOT FOUND in app.js but used in HTML onclick
+
+============================================================
+MODAL-BACKDROP CSS ANALYSIS
+============================================================
+Found 1 .modal-backdrop rule(s)
+  Rule 1: transition: opacity 0.3s ease;
+  WARNING: modal-backdrop without hidden/display:none: <div id="wish-detail-modal" role="dialog" aria-modal="true" class="modal-backdrop">
+  WARNING: modal-backdrop without hidden/display:none: <div id="habit-modal" role="dialog" aria-modal="true" class="modal-backdrop">
+  WARNING: modal-backdrop without hidden/display:none: <div id="test-modal" role="dialog" aria-modal="true" class="modal-backdrop" onclick="if(event.target
+  WARNING: modal-backdrop without hidden/display:none: <div id="persona-modal" role="dialog" aria-modal="true" class="modal-backdrop">
+  WARNING: modal-backdrop without hidden/display:none: <div id="alert-modal" role="dialog" aria-modal="true" class="modal-backdrop">
+  WARNING: modal-backdrop without hidden/display:none: <div id="affirm-modal" role="dialog" aria-modal="true" class="modal-backdrop">
+  WARNING: modal-backdrop without hidden/display:none: <div id="book-modal" role="dialog" aria-modal="true" class="modal-backdrop">
+  WARNING: modal-backdrop without hidden/display:none: <div id="book-reader-modal" role="dialog" aria-modal="true" class="modal-backdrop" style="z-index:15
+  WARNING: modal-backdrop without hidden/display:none: <div id="diary-modal" role="dialog" aria-modal="true" class="modal-backdrop">
+  WARNING: modal-backdrop without hidden/display:none: <div id="course-modal" role="dialog" aria-modal="true" class="modal-backdrop">
+  WARNING: modal-backdrop without hidden/display:none: <div id="settings-modal" role="dialog" aria-modal="true" class="modal-backdrop">
+  WARNING: modal-backdrop without hidden/display:none: <div id="password-modal" role="dialog" aria-modal="true" class="modal-backdrop">
+  WARNING: modal-backdrop without hidden/display:none: <div id="share-card-modal" role="dialog" aria-modal="true" class="modal-backdrop" onclick="if(event.
+  WARNING: modal-backdrop without hidden/display:none: <div id="limited-offer-modal" role="dialog" aria-modal="true" class="modal-backdrop" onclick="if(eve
+  WARNING: modal-backdrop without hidden/display:none: <div id="lock-modal" role="dialog" aria-modal="true" class="modal-backdrop" onclick="if(event.target
+  WARNING: modal-backdrop without hidden/display:none: <div id="feedback-modal" role="dialog" aria-modal="true" class="modal-backdrop" onclick="if(event.ta
+  WARNING: modal-backdrop without hidden/display:none: <div id="zodiac-birthday-modal" role="dialog" aria-modal="true" class="modal-backdrop" onclick="if(e
+  WARNING: modal-backdrop without hidden/display:none: <div id="zodiac-fortune-modal" role="dialog" aria-modal="true" class="modal-backdrop" onclick="if(ev
+  WARNING: modal-backdrop without hidden/display:none: <div id="birthday-blessing-modal" role="dialog" aria-modal="true" class="modal-backdrop">
+  WARNING: modal-backdrop without hidden/display:none: <div id="chunk-error-modal" role="dialog" aria-modal="true" class="modal-backdrop">
+  WARNING: modal-backdrop without hidden/display:none: <div id="badge-unlock-modal" role="dialog" aria-modal="true" class="modal-backdrop">
+
+============================================================
+POINTER-EVENTS CONTEXT
+============================================================
+  HTML: ...    .pointer-events-none { pointer-events: none; }...
+  HTML: ...      pointer-events: none;...
+  HTML: ...nd:linear-gradient(to right, rgba(0,0,0,0.08), transparent 30%, transparent 70%, rgba(0,0,0,0.08)); pointer-events:none"></div>...
+  JS: ...      border-radius:50%;      left:${x}px;top:${y}px;      transform:translate(-50%,-50%);      ...;      animation:ripple 1.5s ease-out forwards;      animation-delay:${i*0.2}s;    `;    sky.app...
+  JS: ...ateElement('div');    s.textContent = '✨';    s.style.cssText = 'position:absolute;font-size:14px;...;';    s.style.left = x + 'px';    s.style.top = y + 'px';    sky.appendChild(s);    const angle...
+
+============================================================
+INIT-RELATED TRY-CATCH ANALYSIS
+============================================================
+  try-catch near 'init': try=        loadChunk('tools').then(() => { showPage('search'); initSearch(); }); ... catch=}      e.preventDefault(); return;    }  
+  try-catch near 'init': try= performance.measure('init-critical', 'init-start', 'init-critical-end'); } catc... catch=
+  try-catch near 'init': try= performance.measure('init-deferred', 'init-critical-end', 'init-deferred-end');... catch=}      }    
+  try-catch near 'init': try= return localStorage.getItem('cosmos_tutorial_done'); } catch(e) { return null; ... catch=
+  try-catch near 'init': try= init(); ... catch= console.error('init() 调用失败:', e); 
+  try-catch near 'load': try=        loadChunk('tools').then(() => { showPage('search'); initSearch(); }); ... catch=}      e.preventDefault(); return;    }  
+  try-catch near 'load': try= localStorage.removeItem('cosmos_island_state_v3'); } catch(e) {}    try { loca... catch= showToast('请手动刷新页面'); }  }
+  try-catch near 'localStorage': try=  const savedLang = localStorage.getItem('cosmos_lang');  if (savedLang && TRA... catch=
+  try-catch near 'localStorage': try= localStorage.setItem('cosmos_lang', lang); ... catch=}  applyTranslations();  showToast(t('lang_switched'));
+  try-catch near 'localStorage': try=      let v = localStorage.getItem(k);      if (v === null) return d;      if... catch= return d; }  
+  try-catch near 'localStorage': try=      let s = JSON.stringify(v);      if (s.length > 50000) {        try { s ... catch= return false; }  
+  try-catch near 'localStorage': try= const keys = []; for (let i = 0; i < localStorage.length; i++) keys.push(localS... catch= return []; }  
+  try-catch near 'localStorage': try= let total = 0; for (let i = 0; i < localStorage.length; i++) { const k = localS... catch= return 0; }  }
+  try-catch near 'localStorage': try=    if (localStorage.getItem('cosmos_tutorial_done')) return;  ... catch= return; }  tutorialStep = 0;  showTutorialStep();
+  try-catch near 'localStorage': try= localStorage.setItem('cosmos_tutorial_done', '1'); ... catch=
+  try-catch near 'localStorage': try= localStorage.setItem('cosmos_island_welcomed_v3', '1'); ... catch=
+  try-catch near 'localStorage': try=    if (localStorage.getItem('cosmos_island_visitor_v3') && !localStorage.getIt... catch=
+  try-catch near 'localStorage': try=    if (!localStorage.getItem('cosmos_island_journey_dismissed') && !localStora... catch=}  // P1-1: 渲染动态情绪选择器  setTimeout(() => renderMoodPicker('
+  try-catch near 'localStorage': try=    localStorage.setItem('cosmos_island_visitor_v3', '1');    localStorage.set... catch= return null; } })();  if (!hasTutorialDone) {    setTimeo
+  try-catch near 'localStorage': try=    const startStr = localStorage.getItem('cosmos_island_journey_start');    i... catch= return 0; }
+  try-catch near 'localStorage': try= localStorage.setItem('cosmos_island_journey_start', new Date().toISOString()); ... catch=}  render7DayJourney();
+  try-catch near 'localStorage': try=    if (localStorage.getItem('cosmos_island_journey_done')) return;  ... catch=
+  try-catch near 'localStorage': try= localStorage.setItem('cosmos_island_journey_done', '1'); ... catch=
+  try-catch near 'localStorage': try= localStorage.setItem('cosmos_island_journey_dismissed', '1'); ... catch=}
+  try-catch near 'localStorage': try= localStorage.removeItem('cosmos_island_state_v3'); } catch(e) {}    try { loca... catch= showToast('请手动刷新页面'); }  }
+  try-catch near 'localStorage': try= localStorage.setItem('cosmos_island_welcomed_v3', '1'); ... catch=}  goHome();  playSound('bloom');  triggerConfetti();  s
+  try-catch near 'localStorage': try= localStorage.setItem('cosmos_island_ethics_v3', '1'); ... catch=
+  try-catch near 'localStorage': try= return localStorage.getItem('cosmos_island_welcomed_v3'); } catch(e) { return n... catch= return null; } })();    if (!hasWelcomed) {      if (!has
+  try-catch near 'localStorage': try= return localStorage.getItem('cosmos_tutorial_done'); } catch(e) { return null; ... catch=
+  try-catch near 'localStorage': try= localStorage.setItem('pwa_installable', 'true'); ... catch=}
+  try-catch near 'localStorage': try= localStorage.setItem('cosmos_pwa_installed', 'true'); ... catch=}    }    pwaInstallPrompt = null;  }).catch(err => conso
+  try-catch near 'localStorage': try= localStorage.setItem('cosmos_pwa_visit_count', String(visits + 1)); } catch(e) ... catch= return; 
+  try-catch near 'localStorage': try=localStorage.setItem('cosmos_pwa_dismissed','true');... catch=
+  try-catch near 'localStorage': try=    for (let i = 0; i < localStorage.length; i++) {      const key = localStor... catch= console.warn('导出数据失败', e); 
+  try-catch near 'localStorage': try= localStorage.setItem(key, value); ... catch=}      count++;    }  });  logActivity('import', '导入数据')
+  try-catch near 'localStorage': try=      const value = localStorage.getItem(key);      if (value !== null) data[k... catch=}  
+  try-catch near 'localStorage': try= return localStorage.getItem('cosmos_' + opt.key) ? '有数据' : '无数据'; ... catch= return '无数据'; } })()}</div>      </div>    </label>  `).
+  try-catch near 'localStorage': try= JSON.parse('{"a":1}'); return true; } catch(e) { return false; } } },    { nam... catch= return false; } } 
+  try-catch near 'localStorage': try= const v = localStorage.getItem(k); size = v ? v.length * 2 : 0; ... catch=
+  try-catch near 'localStorage': try= localStorage.removeItem('cosmos_island_welcomed_v3'); ... catch=}  showToast('🗑️ 所有数据已重置');  setTimeout(() => location.rel
+
+============================================================
+APP.JS TOP-LEVEL DOM ACCESS (RISK ANALYSIS)
+============================================================
+  'document.querySelector' first at char 12552, inside function/arrow: True
+  'document.getElementById' first at char 12885, inside function/arrow: True
+  'document.body' first at char 14181, inside function/arrow: False
+    WARNING: Direct DOM access at module top level!
+  'document.head' first at char 150521, inside function/arrow: False
+    WARNING: Direct DOM access at module top level!
+  'document.documentElement' first at char 14136, inside function/arrow: False
+    WARNING: Direct DOM access at module top level!
+
+============================================================
+EVENT STOPPING ANALYSIS
+============================================================
+stopPropagation: 3
+stopImmediatePropagation: 0
+preventDefault: 12
+
+============================================================
+PAGE VISIBILITY / HIDDEN CLASS CHECK
+============================================================
+Total page sections: 66
+  page-welcome
+  page-island
+  page-temple
+  page-tower
+  page-stars
+  page-cloud
+  page-garden
+  page-diary
+  page-library
+  page-wishwall
+  .page CSS:  display: none; 
