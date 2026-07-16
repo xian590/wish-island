@@ -2527,9 +2527,9 @@ function updateSkyBackground() {
   let bg = '';
   if (isNight) {
     if (currentWeather === 'rainy') {
-      bg = 'linear-gradient(180deg, #1A1625 0%, #2D263E 40%, #现实3258 100%)';
+      bg = 'linear-gradient(180deg, #1A1625 0%, #2D263E 40%, #3D3258 100%)';
     } else if (currentWeather === 'cloudy') {
-      bg = 'linear-gradient(180deg, #252030 0%, #352D45 50%, #45现实58 100%)';
+      bg = 'linear-gradient(180deg, #252030 0%, #352D45 50%, #453D58 100%)';
     } else {
       bg = 'linear-gradient(180deg, #0F0A1A 0%, #1A1625 40%, #2D263E 100%)';
     }
@@ -2667,15 +2667,15 @@ const THEMES = {
   },
   purple: {
     primary: '#A898BC', secondary: '#C8B8D8', accent: '#DCCCE8',
-    bg: '#F5F0FA', text: '#4D现实60',
+    bg: '#F5F0FA', text: '#4D3D60',
   },
   blue: {
     primary: '#9DB5C8', secondary: '#B8CCE0', accent: '#D0E0EF',
-    bg: '#F0F5FA', text: '#现实5065',
+    bg: '#F0F5FA', text: '#3D5065',
   },
   green: {
     primary: '#9DC0A8', secondary: '#B8D8C8', accent: '#D0E8DC',
-    bg: '#F0FAF5', text: '#现实5548',
+    bg: '#F0FAF5', text: '#3D5548',
   },
 };
 function setTheme(theme, btn) {
@@ -5510,7 +5510,7 @@ const HEALING_CARDS = [
   { id: 'lily', name: '铃兰轻语', emoji: '🤍', desc: '纯洁的你，值得最纯净的爱', bg: 'linear-gradient(135deg, #E8F0E8, #C8D8C8)' },
   { id: 'sunflower', name: '向阳而生', emoji: '🌻', desc: '你永远是自己的小太阳', bg: 'linear-gradient(135deg, #FFE066, #E8A830)' },
   { id: 'sakura', name: '樱花飘落', emoji: '🌸', desc: '慢慢来，花会开，你会绽放', bg: 'linear-gradient(135deg, #FFD5E0, #F5B5C5)' },
-  { id: 'starry', name: '星空之约', emoji: '🌌', desc: '你是自然独一无二的星星', bg: 'linear-gradient(135deg, #5D4E6D, #现实3258)' },
+  { id: 'starry', name: '星空之约', emoji: '🌌', desc: '你是自然独一无二的星星', bg: 'linear-gradient(135deg, #5D4E6D, #3D3258)' },
   { id: 'ocean', name: '海洋之心', emoji: '🌊', desc: '你的内心像大海一样辽阔', bg: 'linear-gradient(135deg, #B8D8F0, #7BA8C8)' },
   { id: 'princess', name: '花之日记', emoji: '👑', desc: '亲爱的你，值得世间一切美好', bg: 'linear-gradient(135deg, #F5D5E0, #E8B5C8)' },
   { id: 'crystal', name: '星光水晶之约', emoji: '💎', desc: '你像星光水晶一样，纯净又闪耀', bg: 'linear-gradient(135deg, #D4C5E0, #9DB5C8)' },
@@ -6709,17 +6709,17 @@ const LOVE_SCENES = [
   {title:"深度的对话",desc:"想象你们进行了一次心灵的对话，TA向你敞开心扉，分享内心最深处的感受。"}
 ];
 let loveCurrentCategory = 'all';
-let ignore现实Mode = false;
-function loadSpState() { try { const s = StorageUtil.get('sp_ignore_3d', null); if (s) ignore现实Mode = s; } catch(e){} }
-function saveSpState() { StorageUtil.set('sp_ignore_3d', ignore现实Mode); }
+let ignore3DMode = false;
+function loadSpState() { try { const s = StorageUtil.get('sp_ignore_3d', null); if (s) ignore3DMode = s; } catch(e){} }
+function saveSpState() { StorageUtil.set('sp_ignore_3d', ignore3DMode); }
 function initLove() {
   loadSpState();
   renderSpAffirmations();
   renderSpScenes();
   const t = document.getElementById('ignore-reality-toggle');
   const s = document.getElementById('ignore-3d-status');
-  if(t) t.classList.toggle('on', ignore现实Mode);
-  if(s) s.style.display = ignore现实Mode ? 'block' : 'none';
+  if(t) t.classList.toggle('on', ignore3DMode);
+  if(s) s.style.display = ignore3DMode ? 'block' : 'none';
 }
 // 系统级事件监听器只注册一次（防止 init() 多次调用导致重复注册）
 (function() {
@@ -6766,13 +6766,13 @@ function playLoveScene(el) {
   showToast('闭上眼睛，沉浸在这个场景中 💕');
 }
 function toggleIgnoreReality() {
-  ignore现实Mode = !ignore现实Mode;
+  ignore3DMode = !ignore3DMode;
   const t = document.getElementById('ignore-reality-toggle');
   const s = document.getElementById('ignore-3d-status');
-  if(t) t.classList.toggle('on', ignore现实Mode);
-  if(s) s.style.display = ignore现实Mode ? 'block' : 'none';
+  if(t) t.classList.toggle('on', ignore3DMode);
+  if(s) s.style.display = ignore3DMode ? 'block' : 'none';
   saveSpState();
-  showToast(ignore现实Mode ? '🛡️ 忽略现实模式已开启' : '忽略现实模式已关闭');
+  showToast(ignore3DMode ? '🛡️ 忽略现实模式已开启' : '忽略现实模式已关闭');
 }
 const WEALTH_AFFIRMATIONS = [
   "我是金钱的磁铁，钱从各种意想不到的渠道流向我",
